@@ -842,7 +842,7 @@ public class CEDP {
 		
 		// CEDP-NLTD
 		TextDensity.computeDensitys(m_nodelist, m_root);
-		double[] arr_node_density_probability = TextNodeDensity.get_node_density_probability(textNodes, CEDP_Global.m_text_density);
+		double[] arr_node_density_probability = TextNodeDensity.get_node_density_probability(textNodes, CEDP_Global.m_nonlinkchar_density);
 
 		/*
 		// CEDP-TD
@@ -912,7 +912,7 @@ public class CEDP {
 		System.out.println("Start running, please wait ...");
 		Date startDate = new Date();
 
-		String subDir = "20170331-CEDP-CTD";
+		String subDir = "20161227-CEDP-NLTD";
 		String sourceDir = "D:\\GQ-DEV\\JoS-NewsDataSource\\original\\CleanEval-en";
 		String targetDir = "D:\\GQ-DEV\\Results\\" + subDir + "\\CleanEval-en\\";
 		CEDP.extract(sourceDir, targetDir);

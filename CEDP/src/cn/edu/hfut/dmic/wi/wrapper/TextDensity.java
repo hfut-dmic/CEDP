@@ -398,7 +398,7 @@ public class TextDensity {
 	public static void computeDensitys(NodeList nodelist, TagNode root) {
 		countChar(root);
 //		countPunc(root);
-//		countLinkChar(root);
+		countLinkChar(root);
 		countNonLinkChar(root);
 		countTag(root);
 //		countLinkTag(root);

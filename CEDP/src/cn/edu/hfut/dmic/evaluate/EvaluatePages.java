@@ -337,7 +337,7 @@ public class EvaluatePages {
 		System.out.println("Start running, please wait ...");
 		Date startDate = new Date();
 		EvaluatePages evaluatePages = new EvaluatePages();
-		String subDir = "20170331-CEDP-CTD";
+		String subDir = "20161227-CEDP-NLTD";
 		FileOutputStream fos = new FileOutputStream("D:\\GQ-DEV\\Results\\" + subDir + "\\fos.txt",
 				false);
 		PrintStream ps = new PrintStream(fos);
